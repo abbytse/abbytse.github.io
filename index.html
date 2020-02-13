@@ -10,25 +10,50 @@
 </head>
 <header>
     <nav>
-        <ul id="nav">
-            <!-- About me section -->
+        <ul id="nav" class="split left">
+            <li><img src="../Images/me.jpg" alt="Abby Tse" height= 200px></li>
             <li><a href="../index.html">Home</a></li>
             <!-- Projects on Data Science, etc.-->
             <li><a href="../projects.html">Projects</a></li>
             <!-- Write about resources and experiences -->
-            <li class="mobile"><a href="../blog.html">Blog</a></li>
+            <li><a href="../blog.html">Blog</a></li>
             <!-- Contact includes section to email, resume -->
-            <li class="mobile"><a href="../contact.html">Contact</a></li>
-            <li><a href="../index.html"><img src="../Images/Abby Tse Logo.png" alt="Abby Tse Logo" width="180" height="180"></a></li>
-            <li class="desktop"><a href="../blog.html">Blog</a></li>
-            <li class="desktop"><a href="../contact.html">Contact</a></li>
+            <li><a href="../contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 <body>
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <h1 class="ml9 split right">
+        <span class="text-wrapper">
+          <span class="letters">Welcome!</span>
+        </span>
+    </h1>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml9 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml9 .letter',
+            scale: [0, 1],
+            duration: 1500,
+            elasticity: 600,
+            delay: (el, i) => 45 * (i+1)
+        }).add({
+            targets: '.ml9',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+    </script>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container split rightSlide">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
         <img src="../Images/brooke-lark-pGM4sjt_BdQ-unsplash.jpg" class="slideShowImage">
@@ -47,39 +72,21 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
 
     <script>
         var slideIndex = 0;
         showSlides();
 
         function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 7000); // Change image every 2 seconds
+            var slides = document.getElementsByClassName("mySlides");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 7000); // Change image every 7 seconds
         }
     </script>
 </body>
-<body>
-    <h1 class="split leff">About Me</h1>
-    <img class = "leftImage" src="../Images/me.jpg" alt="Image of Abby" height="300" width="300">
-    <h3 class="split right">
-        I'm a graduting senior at Fordham University studying computer science. 
-    </h3>
-</body>
-<footer>
-    <h3>Abby Tse • abbytse7878@gmail.com • Feburary 2020</h3>
-</footer>
 </html>
