@@ -119,9 +119,15 @@ header a{
     padding-left: 100px;
 }
 
+.rightLetter{
+    text-align: right;
+    float: center;
+    margin-top:-100px;
+    margin-left: 180px;
+}
+
 .rightSlide{
     right:0;
-    margin-right: 50px;
 }
 
 .leftCircles{
@@ -138,7 +144,6 @@ header a{
     border-radius: 50%;
     left:0;
     margin-left: 100px;
-    margin-top: 20px;
 }
 
 /* Animated Letters */
