@@ -103,9 +103,22 @@ header a{
     color:rgba(41, 33, 33, 0.774);
 }
 
-#nav img{
+.logo{
     border-radius: 50%;
     margin-left: -65px;
+}
+
+.githubLogo{
+    margin-left: -10px;
+}
+
+.linkedinLogo{
+    margin-left:-15px;
+    margin-top: -10px;
+}
+
+.mailto{
+    margin-left:-35px;
 }
 
 /* SPLITTING */
@@ -166,4 +179,12 @@ header a{
     transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
+  }
+
+  .aboutMe{
+      text-decoration: none;
+  }
+
+  footer{
+      text-align: center;
   }
