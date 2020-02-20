@@ -1,6 +1,0 @@
-Test file
-hello
-
-testing
-testing again
-
