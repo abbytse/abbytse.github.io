@@ -109,12 +109,14 @@ header a{
 }
 
 .githubLogo{
-    margin-left: -10px;
+    float:center;
 }
 
 .linkedinLogo{
-    margin-left:-15px;
-    margin-top: -10px;
+}
+
+.mailLogo{
+    margin-right: 100px;
 }
 
 .mailLogo{
