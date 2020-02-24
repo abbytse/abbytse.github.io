@@ -25,90 +25,88 @@
 </header>
 
 <body>
-    <h1 class="typewrite ml9 split rightLetter" data-period="2000" data-type='[ "Hi, I am Abby.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'></h1>>
-        <span class="wrap">
-          <span class="letters">Welcome!</span>
-        </span>
-    </h1>
+    <h1 class="typewrite ml9 split rightLetter" data-period="2000" data-type='[ "Hi, I am Abby.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'></h1>
+    <span class="wrap letters"></span>
     
     <script>
-    var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+        var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
+            if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
             }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
+
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+            }
+
+            setTimeout(function() {
+            that.tick();
+            }, delta);
+        };
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
     </script>
 
-    <!-- Slideshow container -->
-    <div class="slideshow-container split rightSlide">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-        <img src="../Images/brooke-lark-pGM4sjt_BdQ-unsplash.jpg" class="slideShowImage">
-        </div>
-    
-        <div class="mySlides fade">
-        <img src="../Images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg" class="slideShowImage">
-        </div>
-    
-        <div class="mySlides fade">
-        <img src="../Images/an_vision-esVjV01_E9Y-unsplash.jpg" class="slideShowImage">
-        </div>
-    
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="split right">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <img src="../Images/brooke-lark-pGM4sjt_BdQ-unsplash.jpg" class="slideShowImage">
+            </div>
         
+            <div class="mySlides fade">
+            <img src="../Images/tyler-coleman-FtWQhwpe1qc-unsplash.jpg" class="slideShowImage">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="../Images/an_vision-esVjV01_E9Y-unsplash.jpg" class="slideShowImage">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- About Me Section -->
         <div class="aboutMe">
             <h1>About Me</h1>
             <p>I'm a graduating senior at Fordham University studying computer science. 
@@ -122,12 +120,12 @@
                 fgnondfsodsnjsdlfnodsfkn
             </p>
         </div>
-        
+
         <div>
             <h1>Recent Posts</h1>
         </div>
+
     </div>
-    <br>
 
     <script>
         var slideIndex = 0;
@@ -145,6 +143,7 @@
         }
     </script>
 </body>
+
 <footer>
     <h4>
     <a href="https://github.com/xabbirix"><img src="../Images/iconfinder_github.png" alt="GitHub logo" height= 25px class="githubLogo"></a>
@@ -152,4 +151,5 @@
     <a href="mailto:abbytse7878@gmail.com" target="_top"><img src="../Images/iconfinder_mail.png" alt="mail logo" height= 25px class="mailLogo"></a>
     </h4>
 </footer>
+
 </html>

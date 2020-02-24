@@ -5,7 +5,6 @@ body{
     margin: 0;
     padding: 0;
     font-size: 12px;
-    
 }
 
 /* HEADER */
@@ -16,7 +15,6 @@ header{
     height: 140px;
     padding: 10px 40px 40px 50px;
     background-position: center;
-    /*text-align: center;*/
 }
 header a{
     text-decoration: none;
@@ -108,26 +106,6 @@ header a{
     margin-left: -65px;
 }
 
-.githubLogo{
-    float:center;
-}
-
-.linkedinLogo{
-}
-
-.mailLogo{
-    margin-right: 100px;
-}
-
-.mailLogo{
-    margin-left:-15px;
-    margin-top: -10px;
-}
-
-.mailto{
-    margin-left:-35px;
-}
-
 /* SPLITTING */
 .split{
     height: 100%;
@@ -137,10 +115,16 @@ header a{
     overflow: hidden;
     padding-top: 20px;
     padding-left: 100px;
+    position: relative;
+    margin: auto;
 }
 
 .left{
     position: fixed;
+}
+
+.right{
+    right:0;
 }
 
 .rightLetter{
@@ -157,11 +141,6 @@ header a{
 .leftCircles{
     display: center;
     margin-left: 200px;
-}
-
-.right{
-    text-align: right;
-    float: center;
 }
 
 .leftImage {
