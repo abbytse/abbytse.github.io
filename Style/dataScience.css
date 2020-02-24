@@ -70,6 +70,16 @@ header a{
     position: fixed;
 }
 
+/* Choropleth */
+#Choropleth .counties {
+        fill: none;
+}
+#Choropleth .states {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+}
+
 /* FOOTER */
 footer{
     text-align: center;
