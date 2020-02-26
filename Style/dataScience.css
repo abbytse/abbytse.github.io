@@ -46,9 +46,7 @@ header a{
 .split{
     height: 100%;
     width: 50%;
-    z-index: 1;
     top: 0;
-    overflow: hidden;
     padding-top: 20px;
     padding-left: 100px;
     position: top;
