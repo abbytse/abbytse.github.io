@@ -179,7 +179,7 @@ header a{
 
   /* The text box*/
   .chat {
-    width: 500px;
+    width: 450px;
     height: 500px;
     margin-top: 140px;
     position: fixed;
@@ -242,6 +242,7 @@ header a{
 
   /* FOOTER */ 
   footer{
+    position: relative;
     text-align: center;
     margin-left: 100px;
     margin-top: 50px;

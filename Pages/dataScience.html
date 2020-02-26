@@ -25,7 +25,7 @@
 </header>
 
 <body>
-    <h1 class="split rightLetter">▁ ▂ ▄ ▅ ▆ ▇ █   🎀  𝒟𝒶𝓉𝒶 𝒮𝒸𝒾𝑒𝓃𝒸𝑒  🎀   █ ▇ ▆ ▅ ▄ ▂ ▁</h1>
+    <h1 class="split rightLetter"> Unemployment Graph </h1>
     <div class="split right">
         <!-- https://bl.ocks.org/adamjanes/6cf85a4fd79e122695ebde7d41fe327f -->
         <div id="Choropleth">
@@ -84,8 +84,8 @@
                     .remove();
 
                 var promises = [
-                d3.json("https://d3js.org/us-10m.v1.json"),
-                d3.tsv("unemployment.tsv", function(d) { unemployment.set(d.id, +d.rate); })
+                    d3.json("https://d3js.org/us-10m.v1.json"),
+                    d3.tsv("unemployment.tsv", function(d) { unemployment.set(d.id, +d.rate); })
                 ]
 
                 Promise.all(promises).then(ready)
@@ -109,7 +109,6 @@
             </script>
             <p>Credit: https://bl.ocks.org/adamjanes/6cf85a4fd79e122695ebde7d41fe327f </p>
         </div>
-            
     </div>
 </body>
 

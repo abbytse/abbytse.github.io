@@ -1,0 +1,103 @@
+! version = 2.0
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
++ hello
+- Hello, what is your name?
+
++ hi
+- Hi, what is your name?
+
++ my name is *
+- Nice to meet you <star>
+- Nice meeting you <star>
+
++ thank you
+- You're welcome
+- Welcome
+- No problem
+- No worries
+
++ how are you 
+- I'm great, how are you?
+- I'm good, you? 
+- Good :) you? 
+- Great! You? 
+- I'm fine, thanks for asking! 
+
++ say something random
+- This {random}message|sentence{/random} has a random word.
+
+// This one will have a space.
++ what are you
+- I am an artificial intelligence programmed\s
+^ using RiveScript.
+
++ what is up
+- Not much, you?
+- nm, you?
+- Not a lot, you?
+
++ you are a bot
+- How did you know I'm a machine?
+
++ * told me to say *
+- Why would <star1> tell you to say "<star2>"?
+- Did you say "<star2>" after <star1> told you to?
+
++ i am * years old
+- A lot of people are <star1> years old.
+
++ where is *
+- Where it belongs.
+- Where you left it.
+- Where the heart is.
+
++ who is *
+- I don't know who <star> is.
+
++ what is your (home|office|cell) number
+- You can reach me at: 1 (800) 555-1234.
+
++ i am (really|very|super) tired
+- I'm sorry to hear that you are <star> tired.
+
++ i (like|love) the color *
+- What a coincidence! I <star1> that color too!
+- I also have a soft spot for the color <star2>!
+- Really? I <star1> the color <star2> too!
+- Oh I <star1> <star2> too!
+
+! array colors = red blue green yellow
+
++ what color is my (@colors) *
+- Your <star2> is <star1>, silly!
+- Do I look dumb to you? It's <star1>!
+
++ i am wearing a (@colors) shirt
+- Do you really like <star>?
+
++ google *
+- Google search: <a href="http://google.com/search?q=<star>">Click Here</a>
+
++ *
+- Sorry did not get what you said
+- I am afraid that i can not understand you
+- I didn't get it
+- Sorry can you please elaborate that for me

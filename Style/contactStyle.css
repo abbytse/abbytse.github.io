@@ -41,6 +41,22 @@ header a{
     margin-left: -65px;
 }
 
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 700px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
 /* SPLITTING */
 .split{
     height: 100%;
