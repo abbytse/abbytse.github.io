@@ -10,6 +10,7 @@ body{
 /* HEADER */
 header{
     background-color:white;
+    background-repeat: no-repeat;
     height: 140px;
     padding: 10px 40px 40px 50px;
     background-position: center;
@@ -48,6 +49,7 @@ header a{
     top: 0;
     padding-top: 20px;
     padding-left: 100px;
+    position: top;
     margin: auto;
 }
 .rightLetter{
@@ -56,37 +58,32 @@ header a{
     float: top;
     position: top;
     margin: auto;
-    font-size: 35px;
+    font-size: 20px;
     margin-top:-150px;
     margin-left: 350px;
     margin-bottom: 50px;
 }
 
 .right{
-    right:0;
     position: relative;
-    margin-left: 350px;
+    margin-left: 490px;
+}
+
+.right li{
+    display: table;
+}
+
+.vertical{
+    max-width: 60%;
+}
+
+.horizontal{
+    height: 600px;
 }
 
 .left{
     position: fixed;
 }
-
-/* Style buttons */
-.btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    padding: 6px 15px;
-    cursor: pointer;
-    font-size: 15px;
-  }
-  
-  /* Darker background on mouse-over */
-  .btn:hover {
-    background-color: RoyalBlue;
-  }
-
 
 /* FOOTER */
 footer{
