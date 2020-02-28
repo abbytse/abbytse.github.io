@@ -2,4 +2,4 @@
 
 To-do: 
 Optimize for mobile devices
-Add analytics to the website
+Add analytics to the website ✔️

@@ -10,7 +10,6 @@ body{
 /* HEADER */
 header{
     background-color:white;
-    /*background-size: 100%;*/
     background-repeat: no-repeat;
     height: 140px;
     padding: 10px 40px 40px 50px;
@@ -72,6 +71,7 @@ header a{
 
 .slideShowImage{
     width:100%;
+    height: 50%;
 }
 
 @-webkit-keyframes fade {
@@ -125,6 +125,7 @@ header a{
 
 .right{
     right:0;
+    position: relative;
 }
 
 .rightLetter{
@@ -132,21 +133,6 @@ header a{
     float: center;
     margin-top:-100px;
     margin-left: 180px;
-}
-
-.rightSlide{
-    right:0;
-}
-
-.leftCircles{
-    display: center;
-    margin-left: 200px;
-}
-
-.leftImage {
-    border-radius: 50%;
-    left:0;
-    margin-left: 100px;
 }
 
 /* Animated Letters */
@@ -176,7 +162,6 @@ header a{
   }
 
   /* CHATBOT*/
-
   /* The text box*/
   .chat {
     width: 450px;
@@ -197,9 +182,8 @@ header a{
 
   /*The input bar*/
   .actions {
-    position: fixed;
+    position: relative;
     bottom: 0;
-    display: block;
     width: 100%;
   }
   .actions input{
@@ -207,15 +191,11 @@ header a{
     display: block;
     width: 100%;
     outline: 1;
-    border-top: 1;
-    border-left: 1;
-    border-right: 1;
   }
 
   /* Messages */ 
   .messages div {
     max-width: 60%;
-    display: block;
     margin: 5px;
     padding: 10px;
     border-radius: 7px;
@@ -223,27 +203,21 @@ header a{
     position: relative;
     left: 0px;
     top: 0px;
-    z-index: 1;
   }
   .messages .bot {
     text-align: right;
     margin-right: auto;
     background: lightblue;
-    position: relative;
-    z-index: 1;
   }  
   .messages .self {
     text-align: right;
     margin-left: auto;
     background: #DDD;
-    position: relative;
-    z-index: 1;
   } 
 
   /* FOOTER */ 
   footer{
     position: relative;
     text-align: center;
-    margin-left: 100px;
     margin-top: 50px;
   }
