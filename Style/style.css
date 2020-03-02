@@ -183,8 +183,8 @@ header a{
   /*The input bar*/
   .actions {
     position: relative;
-    bottom: 0;
     width: 100%;
+    top: 325px;
   }
   .actions input{
     height: 30px;
@@ -202,7 +202,8 @@ header a{
     background-color:black;
     position: relative;
     left: 0px;
-    top: 0px;
+    top: 100px;
+    bottom: 100px;
   }
   .messages .bot {
     text-align: right;
