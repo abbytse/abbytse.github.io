@@ -182,9 +182,9 @@ header a{
 
   /*The input bar*/
   .actions {
-    position: relative;
+    position: fixed;
     width: 100%;
-    top: 325px;
+    bottom: 10px;
   }
   .actions input{
     height: 30px;
