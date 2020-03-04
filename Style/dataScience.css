@@ -88,6 +88,25 @@ header a{
     stroke-linejoin: round;
 }
 
+/* BAR CHART */
+#barchart .axis--x path {
+    display: none;
+}
+
+/* PIE CHART */
+#chart-area svg {
+    margin:auto;
+    display:inherit;
+}
+#piechart text {
+    font: 10px sans-serif;
+}
+#piechart form {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
 /* FOOTER */
 footer{
     position: relative;
