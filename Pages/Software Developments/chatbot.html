@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abby Tse's Blog</title>
+    <link rel="stylesheet" href="../../Style/chatbotStyle.css">
+    <link rel="icon" type="image/png" href="../../Images/images.png" sizes="16x16" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129420929-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129420929-1');
+    </script>
+</head>
+<header>
+    <nav>
+        <ul id="nav" class="split left">
+            <li><img src="../../Images/me.jpg" alt="Abby Tse" height= 200px class= "logo"></li>
+            <li><h1>Abby Tse</h1></li>
+            <li><a href="../../index.html">Home</a></li>
+            <!-- Projects on Data Science, etc.-->
+            <li><a href="../../Pages/projects.html">Projects</a></li>
+            <!-- Write about resources and experiences -->
+            <li><a href="../../Pages/blog.html">Blog</a></li>
+            <!-- Contact includes section to email, resume -->
+            <li><a href="../../Pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h1 class="split rightLetter"> 🅲🅷🅰🆃🅱🅾🆃 </h1>
+    <div class= "split rightBody">
+        <h3>
+            This Javascript chatbot leverages Rivescript, a Perl based scripting language 
+            for chatbots. This project contains the following components: 
+            <ul>
+                <li>brain.rive</li>
+                <p>Contains the text-based rivescript file that gives the chatbot personality.</p>
+                <li>chatbot.js</li>
+                <p>Makes the chatbot alive by controlling the chatbot's interactions/actions on the webpage.</p>
+                <li>chatbot.html</li>
+                <p>Allows for the chatbot to be deployed onto the webpage/</p>
+                <li>chatbotStyle.css</li>
+                <p>Controls for the </p>
+                <li>riveFileGenerator.py</li>
+                <p>Generates the text-based rivescript file based on data from excel sheet.
+                    This allows for the chatbot to be able to give the users information they may want. 
+                </p>
+            </ul>
+        </h3>
+        <h3>What can it do?
+            <ul>
+                <li>Tell it hello or hi</li>
+                <li>Say: My name is ... and it will greet you!</li>
+                <li>Say: I like the color ... </li>
+                <li>Tell it how you feel like... I'm super tired</li>
+                <li>Or, even ask what it could do ... what can you do? </li>
+                <li>Make it google somthing... google pineapples</li>
+                <li>Thank the bot!</li>
+                <li>Tell it to say something random</li>
+                <li>Ask it philosophical questions like what are you</li>
+                <li>What is up</li>
+                <li>You are a bot</li>
+                <li>Mom told me to say hello</li>
+                <li>Tell it how old you are.. I am 15 years old</li>
+                <li>What is your cell number</li>
+                <li>I am wearing a purple shirt</li>
+            </ul>
+        </h3>
+        <br>
+        <p>Credit: https://medium.com/@awesammcoder/javascript-tutorial-simple-chatai-using-rivescript-js-4f0291e298f1</p>
+    </div>
+    <div class="chat split right">
+        <div class="messages"></div>
+        <div id="edge"></div>
+        <form class="actions">
+            <input type="text" placeholder="press 'Enter' to send...">
+        </form>     
+    </div>
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="../Software Developments/chatbot.js"></script>
+</body>
+
+<footer class="split right">
+    <h4>
+    <a href="https://github.com/xabbirix"><img src="../../Images/iconfinder_github.png" alt="GitHub logo" height= 25px class="githubLogo"></a>
+    <a href="https://www.linkedin.com/in/abby-tse/"><img src="../../Images/iconfinder_linkedin.png" alt="LinkedIn logo" height= 25px class="linkedinLogo"></a>
+    <a href="mailto:abbytse7878@gmail.com" target="_top"><img src="../../Images/iconfinder_mail.png" alt="mail logo" height= 25px class="mailLogo"></a>
+    </h4>
+</footer>
+
+</html>

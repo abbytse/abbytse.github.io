@@ -1,0 +1,136 @@
+/* BODY */
+body{
+    /*background-color: white;*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+/* HEADER */
+header{
+    background-color:white;
+    background-repeat: no-repeat;
+    height: 140px;
+    padding: 10px 40px 40px 50px;
+    background-position: center;
+}
+header a{
+    text-decoration: none;
+}
+
+/* NAVGATION */
+#nav{
+    text-align: left;
+    margin-left: 100px;
+}
+
+#nav li{
+    display: grid;
+    font-size: 15px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+#nav li a{
+    color:rgba(41, 33, 33, 0.774);
+}
+
+.logo{
+    border-radius: 50%;
+    margin-left: -65px;
+}
+
+/* SPLITTING */
+.split{
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 100px;
+    position: relative;
+    margin: auto;
+}
+
+.left{
+    position: fixed;
+}
+
+.right{
+    right:0;
+    position: relative;
+}
+
+.rightLetter{
+    right:0;
+    text-align: center;
+    float: top;
+    position: top;
+    margin: auto;
+    font-size: 30px;
+    margin-top:-100px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+.rightBody{
+    right:0;
+    position: top;
+    margin-left: 325px;
+}
+/* CHATBOT*/
+/* The text box*/
+.chat {
+    width: 275px;
+    height: 300px;
+    margin-top: 320px;
+    position: fixed;
+    overflow: scroll;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.edge{
+    display: block;
+}
+
+  /*The input bar*/
+.actions {
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+}
+.actions input{
+    height: 30px;
+    display: block;
+    width: 100%;
+}
+
+/* Messages */ 
+.messages div {
+    max-width: 60%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color:black;
+    position: relative;
+}
+.messages .bot {
+    text-align: right;
+    margin-right: auto;
+    background: lightblue;
+}  
+.messages .self {
+    text-align: right;
+    margin-left: auto;
+    background: #DDD;
+} 
+
+/* FOOTER */ 
+footer{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
