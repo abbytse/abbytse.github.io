@@ -59,7 +59,6 @@ header a{
     font-size: 35px;
     margin-top:-150px;
     margin-left: 350px;
-    margin-bottom: 50px;
 }
 
 .right{
@@ -92,6 +91,6 @@ header a{
 footer{
     position: relative;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 300px;
     margin-top: 50px;
 }

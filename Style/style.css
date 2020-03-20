@@ -161,61 +161,6 @@ header a{
       text-decoration: none;
   }
 
-  /* CHATBOT*/
-  /* The text box*/
-  .chat {
-    width: 450px;
-    height: 500px;
-    margin-top: 140px;
-    position: fixed;
-    overflow: scroll;
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  .edge{
-    display: block;
-    outline: 1;
-    border-top: 1;
-    border-left: 1;
-    border-right: 1;
-  }
-
-  /*The input bar*/
-  .actions {
-    position: fixed;
-    width: 100%;
-    bottom: 10px;
-  }
-  .actions input{
-    height: 30px;
-    display: block;
-    width: 100%;
-    outline: 1;
-  }
-
-  /* Messages */ 
-  .messages div {
-    max-width: 60%;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 7px;
-    background-color:black;
-    position: relative;
-    left: 0px;
-    top: 100px;
-    bottom: 100px;
-  }
-  .messages .bot {
-    text-align: right;
-    margin-right: auto;
-    background: lightblue;
-  }  
-  .messages .self {
-    text-align: right;
-    margin-left: auto;
-    background: #DDD;
-  } 
-
   /* FOOTER */ 
   footer{
     position: relative;

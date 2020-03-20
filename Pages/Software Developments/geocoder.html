@@ -41,6 +41,7 @@
             It takes in an excel file and parses it to return the distance in miles between 
             the "base" address and all other addresses in the file. 
         </h3>
+        <h4>Using Nominatim for Distance Calculation</h4>
         <pre>
             import pandas as pd
             import numpy as np
@@ -49,9 +50,10 @@
             from geopy.distance import geodesic
             from geopy.exc import GeocoderTimedOut
 
-            baseFileName = "###"
-            rightFileName = '###'
-            wrongFileName = '###'
+            baseFileName = "###.csv"
+            rightFileName = '###.csv'
+            wrongFileName = '###.csv'
+
             baseAddress = "###"
             locator = Nominatim(user_agent="myGeocoder")
             lookup = locator.geocode(baseAddress)
@@ -98,6 +100,37 @@
                 r.write(str(row['###']) + ',' 
                 + str(row['###'])+ ',' 
                 + ...... + '\n')
+        </pre>
+        <h4>Using Bing Maps API for retrieving Lat & Long Points from Addresses</h4>
+        <pre>
+            import pandas as pd
+            import numpy as np
+            import geocoder
+
+            baseFileName = "###.csv"
+            rightFileName = '###.csv'
+
+            r = open(rightFileName,'w')
+
+            r.write('###' + ',' 
+                + '###'+ ',' 
+                ..... + '\n')
+
+            df = pd.read_csv(baseFileName, low_memory=False)
+
+            for index, row in df.iterrows():
+                lookupAddress = str(row['###'])
+                g = geocoder.bing(lookupAddress, key='###')
+                try:
+                    lookupLat = str(g.latlng[0])
+                    lookupLong = str(g.latlng[1])
+                except:
+                    lookupLat = str(0)
+                    lookupLong = str(0)
+
+                r.write(str(row['###']) + ',' 
+                    + str(row['###'])+ ',' 
+                    + ...... + '\n')
         </pre>
 </body>
 
