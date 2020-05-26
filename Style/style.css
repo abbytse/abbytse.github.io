@@ -114,18 +114,21 @@ header a{
     top: 0;
     overflow: hidden;
     padding-top: 20px;
-    padding-left: 100px;
+    padding-left: 75px;
     position: relative;
-    margin: auto;
+    
 }
 
 .left{
-    position: fixed;
+    left: 0;
+    position: relative;
+    margin: auto;
 }
 
 .right{
     right:0;
     position: relative;
+    margin: auto;
 }
 
 .rightLetter{
@@ -167,3 +170,44 @@ header a{
     text-align: center;
     margin-top: 50px;
   }
+
+  @viewport {
+    width: extend-to-zoom;
+    zoom: 1.0 ;
+  }
+
+  @media only screen and (max-width: 500px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        padding: 0px 0px 0px 50px;
+        background-position: center;
+    }
+
+    #nav li{
+        display: block;
+        font-size: 15px;
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+    
+    #nav li a{
+        color:rgba(41, 33, 33, 0.774);
+    }
+    .rightLetter{
+        display: none;
+    }
+
+    .aboutMe{
+        display:none;
+    }
+
+    .slideshow-container{
+        display:none;
+    }
+
+    .right{
+        display: none;
+    }
+  } 
