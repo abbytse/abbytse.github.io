@@ -208,8 +208,9 @@ header a{
     }
 
     .right{
-        right:-20px;
+        right:-50px;
         position: right;
+        width: 65%;
     }
 
     .rightLetter{
