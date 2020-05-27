@@ -102,6 +102,7 @@ header a{
 }
 
 .logo{
+    height: 200px;
     border-radius: 50%;
     margin-left: -65px;
 }
@@ -116,7 +117,6 @@ header a{
     padding-top: 20px;
     padding-left: 75px;
     position: relative;
-    
 }
 
 .left{
@@ -175,39 +175,52 @@ header a{
     width: extend-to-zoom;
     zoom: 1.0 ;
   }
-
-  @media only screen and (max-width: 500px) {
+/* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
     header{
         background-color:white;
         background-repeat: no-repeat;
-        padding: 0px 0px 0px 50px;
-        background-position: center;
+        height: 140px;
     }
 
-    #nav li{
-        display: block;
-        font-size: 15px;
-        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: bold;
-        padding-top: 30px;
+    li h1{
+        display:inline-block;
     }
     
-    #nav li a{
-        color:rgba(41, 33, 33, 0.774);
-    }
-    .rightLetter{
-        display: none;
+    li a{
+        display:inline-block;
+        width: 4em;
     }
 
-    .aboutMe{
-        display:none;
+    .logo{
+        height: 150px;
+        border-radius: 50%;
+        margin-left: -30px;
     }
 
-    .slideshow-container{
-        display:none;
+    .left{
+        left: -175px;
+        position: left;
+    }
+
+    div h1{
+        font-size: medium;
     }
 
     .right{
-        display: none;
+        right:-20px;
+        position: right;
     }
+
+    .rightLetter{
+        text-align: left;
+        float: left;
+        margin-top:-50px;
+        margin-left: 150px;
+    }
+
+    .ml9 {
+        font-size: 2em;
+    }
+
   } 
