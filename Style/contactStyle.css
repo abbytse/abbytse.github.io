@@ -49,13 +49,17 @@ header a{
     padding: 6px 15px;
     cursor: pointer;
     font-size: 15px;
-    margin-left: 700px;
-  }
+    width: 100px;
+    height: 50px;
+    position:relative;
+    left:50%;
+    display: block;
+}
   
-  /* Darker background on mouse-over */
-  .btn:hover {
+/* Darker background on mouse-over */
+.btn:hover {
     background-color: RoyalBlue;
-  }
+}
 
 /* SPLITTING */
 .split{
@@ -79,8 +83,8 @@ header a{
 }
 
 .right{
-    right:0;
     position: relative;
+    right: 250px;
 }
 
 .left{
@@ -95,3 +99,116 @@ footer{
     text-align: center;
     margin-left:150px;
 }
+
+@media only screen and (max-width: 600px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: medium;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: small;
+    }
+
+    .logo{
+        height: 100px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -155px;
+        position: left;
+    }
+
+    .btn{
+        font-size: 12px;
+        width: 80px;
+        height: 38px;
+    }
+
+    .right{
+        right: 100px;
+        width: 65%;
+    }
+
+    .rightLetter{
+        text-align: left;
+        float: left;
+        margin-top:-100px;
+        margin-left: 150px;
+        font-size: large;
+    }
+
+    footer img{
+        height: 20px;
+    }
+    
+  } 
+
+  @media only screen and (min-width:600px) and (max-width: 1200px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: large;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: medium;
+    }
+
+    .logo{
+        height: 150px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .btn{
+        font-size: 15px;
+        width: 100px;
+        height: 50px;
+    }
+
+    .left{
+        left: -150px;
+        position: left;
+    }
+
+    div h1{
+        font-size: large;
+    }
+
+    .right{
+        right:155px;
+        position: right;
+        width: 75%;
+        font-size: small;
+    }
+
+    .rightLetter{
+        text-align: left;
+        float: left;
+        margin-top:-100px;
+        margin-left: 260px;
+        font-size: x-large;
+    }
+
+    footer img{
+        height: 20px;
+    }
+  } 
