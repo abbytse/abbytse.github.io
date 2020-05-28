@@ -1,0 +1,236 @@
+/* BODY */
+body{
+    /*background-color: white;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/* HEADER */
+header{
+    background-color:white;
+    background-repeat: no-repeat;
+    height: 140px;
+    padding: 10px 40px 40px 50px;
+    background-position: center;
+}
+header a{
+    text-decoration: none;
+}
+
+/* NAVGATION */
+#nav{
+    text-align: left;
+    margin-left: 100px;
+}
+
+#nav li{
+    display: grid;
+    font-size: 15px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+#nav li a{
+    color:rgba(41, 33, 33, 0.774);
+}
+
+.logo{
+    border-radius: 50%;
+    margin-left: -65px;
+}
+
+/* SPLITTING */
+.split{
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 100px;
+    position: relative;
+    margin: 0;
+}
+
+.left{
+    position: fixed;
+}
+
+.right{
+    right:0;
+    position: relative;
+}
+
+.rightLetter{
+    right:0;
+    text-align: center;
+    float: top;
+    position: top;
+    margin: auto;
+    font-size: 30px;
+    margin-top:-100px;
+    margin-left: 300px;
+}
+
+.rightBody{
+    right:0;
+    position: top;
+    margin-left: 525px;
+}
+
+/* FOOTER */ 
+footer{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: medium;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: small;
+    }
+
+    .logo{
+        height: 100px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -185px;
+        position: fixed;
+    }
+
+    /* SPLITTING */
+    .split{
+        height: 100%;
+        width: 60%;
+        z-index: 1;
+        top: 0;
+        overflow-x: scroll;
+        padding-top: 20px;
+        padding-left: 100px;
+        position: relative;
+        margin: 0;
+    }
+
+    .right{
+        left:-420px;
+        position: left;
+        width: 100%;
+    }
+
+    .rightLetter{
+        font-size: x-large;
+        text-align: left;
+        float: center;
+        margin-top:-100px;
+        margin-left: 150px;
+    }
+
+    .rightBody{
+        margin-left: 80px;
+        font-size: xx-small;
+    }
+
+    pre {
+        white-space: pre-wrap;       /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+
+    footer img{
+        height: 20px;
+    }
+  } 
+
+  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: medium;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: small;
+    }
+
+    .logo{
+        height: 100px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -185px;
+        position: fixed;
+    }
+
+    /* SPLITTING */
+    .split{
+        height: 100%;
+        width: 60%;
+        z-index: 1;
+        top: 0;
+        overflow-x: scroll;
+        padding-top: 20px;
+        padding-left: 100px;
+        position: relative;
+        margin: 0;
+    }
+
+    .right{
+        left:-420px;
+        position: left;
+        width: 100%;
+    }
+
+    .rightLetter{
+        font-size: x-large;
+        text-align: left;
+        float: center;
+        margin-top:-100px;
+        margin-left: 150px;
+    }
+
+    .rightBody{
+        margin-left: 80px;
+        font-size: xx-small;
+    }
+
+    pre {
+        white-space: pre-wrap;       /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+
+    footer img{
+        height: 20px;
+    }
+  } 
+  } 

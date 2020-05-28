@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Abby Tse's Blog</title>
-    <link rel="stylesheet" href="../../Style/chatbotStyle.css">
+    <link rel="stylesheet" href="../../Style/geocoderStyle.css">
     <link rel="icon" type="image/png" href="../../Images/images.png" sizes="16x16" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129420929-1"></script>
@@ -43,94 +43,94 @@
         </h3>
         <h4>Using Nominatim for Distance Calculation</h4>
         <pre>
-            import pandas as pd
-            import numpy as np
-            from geopy.geocoders import Nominatim
-            from geopy.extra.rate_limiter import RateLimiter
-            from geopy.distance import geodesic
-            from geopy.exc import GeocoderTimedOut
+        import pandas as pd
+        import numpy as np
+        from geopy.geocoders import Nominatim
+        from geopy.extra.rate_limiter import RateLimiter
+        from geopy.distance import geodesic
+        from geopy.exc import GeocoderTimedOut
 
-            baseFileName = "###.csv"
-            rightFileName = '###.csv'
-            wrongFileName = '###.csv'
+        baseFileName = "###.csv"
+        rightFileName = '###.csv'
+        wrongFileName = '###.csv'
 
-            baseAddress = "###"
-            locator = Nominatim(user_agent="myGeocoder")
-            lookup = locator.geocode(baseAddress)
+        baseAddress = "###"
+        locator = Nominatim(user_agent="myGeocoder")
+        lookup = locator.geocode(baseAddress)
 
-            #file containing the calculated distance 
-            r = open(rightFileName,'w')
+        #file containing the calculated distance 
+        r = open(rightFileName,'w')
 
-            r.write('###' + ',' 
-                + '###'+ ',' 
-                ..... + '\n')
+        r.write('###' + ',' 
+            + '###'+ ',' 
+            ..... + '\n')
 
-            #file containing all the other addresses that are improperly formatted 
-            w = open(wrongFileName,'w')
-            w.write('###' + + ',' 
-                + '###'+ ',' 
-                ..... +'\n')
+        #file containing all the other addresses that are improperly formatted 
+        w = open(wrongFileName,'w')
+        w.write('###' + + ',' 
+            + '###'+ ',' 
+            ..... +'\n')
 
-            df = pd.read_csv(baseFileName, low_memory=False)
+        df = pd.read_csv(baseFileName, low_memory=False)
 
-            # 1 - conveneint function to delay between geocoding calls
-            geocode = RateLimiter(locator.geocode, min_delay_seconds=1)
-            # 2- - create location column
-            df['location'] = df['###'].apply(geocode)
-            # 3 - create longitude, latitude and altitude from location column (returns tuple)
-            df['point'] = df['location'].apply(lambda loc: tuple(loc.point) if loc else None)
-            # 4 - split point column into latitude, longitude and altitude columns
-            df[['latitude', 'longitude', 'altitude']] = df['point'].apply(pd.Series)
+        # 1 - conveneint function to delay between geocoding calls
+        geocode = RateLimiter(locator.geocode, min_delay_seconds=1)
+        # 2- - create location column
+        df['location'] = df['###'].apply(geocode)
+        # 3 - create longitude, latitude and altitude from location column (returns tuple)
+        df['point'] = df['location'].apply(lambda loc: tuple(loc.point) if loc else None)
+        # 4 - split point column into latitude, longitude and altitude columns
+        df[['latitude', 'longitude', 'altitude']] = df['point'].apply(pd.Series)
 
-            for index, row in df.iterrows():
-                basePoint = (lookup.latitude, lookup.longitude)
-                baseLong = str(float(lookup.latitude))
-                baseLat = str(float(lookup.longitude))
-                lookupAddress = str(row['###'])
-                lookupPoint = (row['latitude'],row['longitude'])
-                lookupLat = str(float(row['latitude']))
-                lookupLong = str(float(row['longitude']))
+        for index, row in df.iterrows():
+            basePoint = (lookup.latitude, lookup.longitude)
+            baseLong = str(float(lookup.latitude))
+            baseLat = str(float(lookup.longitude))
+            lookupAddress = str(row['###'])
+            lookupPoint = (row['latitude'],row['longitude'])
+            lookupLat = str(float(row['latitude']))
+            lookupLong = str(float(row['longitude']))
 
-                try: 
-                    distanceMiles = str(float(geodesic(basePoint,lookupPoint).miles))
-                except:
-                    w.write(lookupAddress + "\n")
-                    continue  
+            try: 
+                distanceMiles = str(float(geodesic(basePoint,lookupPoint).miles))
+            except:
+                w.write(lookupAddress + "\n")
+                continue  
                     
-                r.write(str(row['###']) + ',' 
-                + str(row['###'])+ ',' 
-                + ...... + '\n')
+            r.write(str(row['###']) + ',' 
+            + str(row['###'])+ ',' 
+            + ...... + '\n')
         </pre>
         <h4>Using Bing Maps API for retrieving Lat & Long Points from Addresses</h4>
         <pre>
-            import pandas as pd
-            import numpy as np
-            import geocoder
+        import pandas as pd
+        import numpy as np
+        import geocoder
 
-            baseFileName = "###.csv"
-            rightFileName = '###.csv'
+        baseFileName = "###.csv"
+        rightFileName = '###.csv'
 
-            r = open(rightFileName,'w')
+        r = open(rightFileName,'w')
 
-            r.write('###' + ',' 
-                + '###'+ ',' 
-                ..... + '\n')
+        r.write('###' + ',' 
+            + '###'+ ',' 
+            ..... + '\n')
 
-            df = pd.read_csv(baseFileName, low_memory=False)
+        df = pd.read_csv(baseFileName, low_memory=False)
 
-            for index, row in df.iterrows():
-                lookupAddress = str(row['###'])
-                g = geocoder.bing(lookupAddress, key='###')
-                try:
-                    lookupLat = str(g.latlng[0])
-                    lookupLong = str(g.latlng[1])
-                except:
-                    lookupLat = str(0)
-                    lookupLong = str(0)
+        for index, row in df.iterrows():
+            lookupAddress = str(row['###'])
+            g = geocoder.bing(lookupAddress, key='###')
+            try:
+                lookupLat = str(g.latlng[0])
+                lookupLong = str(g.latlng[1])
+            except:
+                lookupLat = str(0)
+                lookupLong = str(0)
 
-                r.write(str(row['###']) + ',' 
-                    + str(row['###'])+ ',' 
-                    + ...... + '\n')
+            r.write(str(row['###']) + ',' 
+                + str(row['###'])+ ',' 
+                + ...... + '\n')
         </pre>
 </body>
 
