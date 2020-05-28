@@ -84,15 +84,11 @@ header a{
 /* The text box*/
 .chat {
     width: 275px;
-    height: 300px;
+    height: 320px;
     margin-top: 300px;
     position: fixed;
-    overflow: scroll;
+    overflow-y: scroll;
     background-color: rgba(255, 255, 255, 0);
-}
-
-.edge{
-    display: flex;
 }
 
 /*The input bar*/
@@ -100,6 +96,7 @@ header a{
     position: fixed;
     width: 100%;
     bottom: 10px;
+    display: block;
 }
 .actions input{
     height: 30px;
@@ -114,7 +111,6 @@ header a{
     margin: 5px;
     padding: 10px;
     border-radius: 7px;
-    background-color:black;
     position: relative;
 }
 .messages .bot {
@@ -135,7 +131,215 @@ footer{
     margin-top: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: medium;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: small;
+    }
+
+    .logo{
+        height: 100px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -155px;
+        position: fixed;
+    }
+
+    .right{
+        left:-420px;
+        position: left;
+        width: 100%;
+    }
+
+    .rightLetter{
+        font-size: large;
+        text-align: left;
+        float: center;
+        margin-top:-100px;
+        margin-left: 150px;
+    }
+
+    .rightBody{
+        margin-left: 85px;
+        font-size: xx-small;
+        width: 55%;
+    }
+
+    /* CHATBOT*/
+    /* The text box*/
+    .chat {
+        width: 150px;
+        height: 100px;
+        margin-top: 530px;
+        position: fixed;
+        overflow-y: scroll;
+        background-color: rgba(255, 255, 255, 0);
+        left: -420px;
+    }
+    
+    .edge{
+        display: block;
+    }
+    
+    /*The input bar*/
+    .actions {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+    }
+    .actions input{
+        height: 20px;
+        display: block;
+        width: 30%;
+    }
+    
+    /* Messages */ 
+    .messages div {
+        max-width: 60%;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 7px;
+        background-color:black;
+        position: relative;
+        font-size: 10px;
+    }
+    .messages .bot {
+        text-align: right;
+        margin-right: auto;
+        background: lightblue;
+    }  
+    .messages .self {
+        text-align: right;
+        margin-left: auto;
+        background: #DDD;
+    } 
+
+    footer img{
+        height: 20px;
+    }
+  } 
+
+  @media only screen and (min-width: 300px) and (max-width: 600px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: medium;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: small;
+    }
+
+    .logo{
+        height: 100px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -155px;
+        position: fixed;
+    }
+
+    .right{
+        left:-420px;
+        position: left;
+        width: 100%;
+    }
+
+    .rightLetter{
+        font-size: x-large;
+        text-align: left;
+        float: center;
+        margin-top:-100px;
+        margin-left: 150px;
+    }
+
+    .rightBody{
+        margin-left: 85px;
+        font-size: xx-small;
+        width: 55%;
+    }
+
+    /* CHATBOT*/
+    /* The text box*/
+    .chat {
+        width: 150px;
+        height: 110px;
+        margin-top: 530px;
+        position: fixed;
+        overflow-y: scroll;
+        background-color: rgba(255, 255, 255, 0);
+        left: -430px;
+    }
+    
+    .edge{
+        display: block;
+    }
+    
+    /*The input bar*/
+    .actions {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+    }
+    .actions input{
+        height: 20px;
+        display: block;
+        width: 25%;
+    }
+    
+    /* Messages */ 
+    .messages div {
+        max-width: 60%;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 7px;
+        background-color:black;
+        position: relative;
+        font-size: 10px;
+    }
+
+    .messages .bot {
+        text-align: right;
+        margin-right: auto;
+        background: lightblue;
+    }  
+
+    .messages .self {
+        text-align: right;
+        margin-left: auto;
+        background: #DDD;
+    } 
+
+    footer img{
+        height: 20px;
+    }
+  } 
+
+  @media only screen and (min-width: 600px) and (max-width: 700px) {
     header{
         background-color:white;
         background-repeat: no-repeat;
@@ -171,28 +375,27 @@ footer{
     }
 
     .rightLetter{
-        font-size: large;
+        font-size: x-large;
         text-align: left;
-        float: left;
-        margin-top:-50px;
+        float: center;
+        margin-top:-130px;
         margin-left: 150px;
     }
 
     .rightBody{
-        right:0;
-        position: top;
-        margin-left: 70px;
-        font-size: x-small;
+        margin-left: 55px;
+        font-size: xx-small;
+        width: 55%;
     }
 
     /* CHATBOT*/
     /* The text box*/
     .chat {
-        width: 275px;
-        height: 300px;
-        margin-top: 320px;
+        width: 150px;
+        height: 180px;
+        margin-top: 430px;
         position: fixed;
-        overflow: scroll;
+        overflow-y: scroll;
         background-color: rgba(255, 255, 255, 0);
     }
     
@@ -237,7 +440,7 @@ footer{
     }
   } 
 
-  @media only screen and (min-width:600px) and (max-width: 1200px) {
+  @media only screen and (min-width:700px) and (max-width: 800px) {
     header{
         background-color:white;
         background-repeat: no-repeat;
@@ -273,28 +476,380 @@ footer{
     }
 
     .rightLetter{
-        font-size: large;
+        font-size: x-large;
         text-align: left;
-        float: left;
-        margin-top:-50px;
+        float: center;
+        margin-top:-100px;
         margin-left: 150px;
     }
 
     .rightBody{
-        right:0;
-        position: top;
-        margin-left: 70px;
+        margin-left: 55px;
+        font-size: xx-small;
+        width: 49%;
+    }
+
+    /* CHATBOT*/
+    /* The text box*/
+    .chat {
+        width: 200px;
+        height: 200px;
+        margin-top: 410px;
+        position: fixed;
+        overflow-y: scroll;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .edge{
+        display: block;
+    }
+    
+    /*The input bar*/
+    .actions {
+        position: fixed;
+        width: 100%;
+        bottom: 10px;
+    }
+    .actions input{
+        height: 30px;
+        display: block;
+        width: 100%;
+    }
+    
+    /* Messages */ 
+    .messages div {
+        max-width: 60%;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 7px;
+        background-color:black;
+        position: relative;
+    }
+    .messages .bot {
+        text-align: right;
+        margin-right: auto;
+        background: lightblue;
+    }  
+    .messages .self {
+        text-align: right;
+        margin-left: auto;
+        background: #DDD;
+    } 
+
+    footer img{
+        height: 20px;
+    }
+  } 
+
+  @media only screen and (min-width:800px) and (max-width: 900px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: medium;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: small;
+    }
+
+    .logo{
+        height: 150px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -155px;
+        position: left;
+    }
+
+    .right{
+        right:0px;
+        position: right;
+        width: 100%;
+    }
+
+    .rightLetter{
+        font-size: x-large;
+        text-align: left;
+        float: center;
+        margin-top:-100px;
+        margin-left: 250px;
+    }
+
+    .rightBody{
+        margin-left: 105px;
         font-size: x-small;
+        width: 49%;
+    }
+
+    /* CHATBOT*/
+    /* The text box*/
+    .chat {
+        width: 200px;
+        height: 200px;
+        margin-top: 410px;
+        position: fixed;
+        overflow-y: scroll;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .edge{
+        display: block;
+    }
+    
+    /*The input bar*/
+    .actions {
+        position: fixed;
+        width: 100%;
+        bottom: 10px;
+    }
+    .actions input{
+        height: 30px;
+        display: block;
+        width: 100%;
+    }
+    
+    /* Messages */ 
+    .messages div {
+        max-width: 60%;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 7px;
+        background-color:black;
+        position: relative;
+    }
+    .messages .bot {
+        text-align: right;
+        margin-right: auto;
+        background: lightblue;
+    }  
+    .messages .self {
+        text-align: right;
+        margin-left: auto;
+        background: #DDD;
+    } 
+
+    footer img{
+        height: 20px;
+    }
+  } 
+
+  @media only screen and (min-width:900px) and (max-width: 1000px) {
+    .logo{
+        height: 200px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -155px;
+        position: left;
+    }
+
+    .right{
+        right:0px;
+        position: right;
+        width: 100%;
+    }
+
+    .rightLetter{
+        font-size: xx-large;
+        text-align: left;
+        float: center;
+        margin-top:-100px;
+        margin-left: 290px;
+    }
+
+    .rightBody{
+        margin-left: 155px;
+        font-size: x-small;
+        width: 50%;
+    }
+
+    /* CHATBOT*/
+    /* The text box*/
+    .chat {
+        width: 200px;
+        height: 200px;
+        margin-top: 410px;
+        position: fixed;
+        overflow-y: scroll;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .edge{
+        display: block;
+    }
+    
+    /*The input bar*/
+    .actions {
+        position: fixed;
+        width: 100%;
+        bottom: 10px;
+    }
+    .actions input{
+        height: 30px;
+        display: block;
+        width: 100%;
+    }
+    
+    /* Messages */ 
+    .messages div {
+        max-width: 60%;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 7px;
+        background-color:black;
+        position: relative;
+    }
+    .messages .bot {
+        text-align: right;
+        margin-right: auto;
+        background: lightblue;
+    }  
+    .messages .self {
+        text-align: right;
+        margin-left: auto;
+        background: #DDD;
+    } 
+
+    footer img{
+        height: 20px;
+    }
+  } 
+
+  @media only screen and (min-width:1000px) and (max-width: 1200px) {
+    .logo{
+        height: 200px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -155px;
+        position: left;
+    }
+
+    .right{
+        right:0px;
+        position: right;
+        width: 100%;
+    }
+
+    .rightLetter{
+        font-size: xx-large;
+        text-align: left;
+        float: center;
+        margin-top:-100px;
+        margin-left: 290px;
+    }
+
+    .rightBody{
+        margin-left: 155px;
+        font-size: x-small;
+        width: 50%;
     }
 
     /* CHATBOT*/
     /* The text box*/
     .chat {
         width: 275px;
-        height: 300px;
-        margin-top: 320px;
+        height: 320px;
+        margin-top: 300px;
         position: fixed;
-        overflow: scroll;
+        overflow-y: scroll;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .edge{
+        display: block;
+    }
+    
+    /*The input bar*/
+    .actions {
+        position: fixed;
+        width: 100%;
+        bottom: 10px;
+    }
+    .actions input{
+        height: 30px;
+        display: block;
+        width: 100%;
+    }
+    
+    /* Messages */ 
+    .messages div {
+        max-width: 60%;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 7px;
+        background-color:black;
+        position: relative;
+    }
+    .messages .bot {
+        text-align: right;
+        margin-right: auto;
+        background: lightblue;
+    }  
+    .messages .self {
+        text-align: right;
+        margin-left: auto;
+        background: #DDD;
+    } 
+
+    footer img{
+        height: 20px;
+    }
+  } 
+
+  @media only screen and (min-width:1200px) and (max-width: 1400px) {
+    .logo{
+        height: 200px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -155px;
+        position: left;
+    }
+
+    .right{
+        right:0px;
+        position: right;
+        width: 100%;
+    }
+
+    .rightLetter{
+        font-size: xx-large;
+        text-align: left;
+        float: center;
+        margin-top:-100px;
+        margin-left: 400px;
+    }
+
+    .rightBody{
+        margin-left: 175px;
+        font-size: x-small;
+        width: 60%;
+    }
+
+    /* CHATBOT*/
+    /* The text box*/
+    .chat {
+        width: 275px;
+        height: 320px;
+        margin-top: 300px;
+        position: fixed;
+        overflow-y: scroll;
         background-color: rgba(255, 255, 255, 0);
     }
     
