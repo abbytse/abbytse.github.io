@@ -1,7 +1,6 @@
 # Personal-Website-and-Blog
 
 To-do: 
-- Optimize for mobile devices
-- Make a new resume 
+- Optimize for mobile devices **IN PROGRESS
 - Make the rivescript file converter 
-- Figure out how to display Google Analytics on Website (Real Time Data)
+- Display Google Analytics on Website (Real Time Data)
