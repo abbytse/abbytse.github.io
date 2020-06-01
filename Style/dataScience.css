@@ -1,3 +1,50 @@
+#Choropleth{
+    height: device-height;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/* Choropleth */
+#Choropleth .counties {
+    fill: none;
+}
+#Choropleth .states {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+}
+
+/* BAR CHART */
+#barchart{
+    height: device-height;
+    width: device-width;
+    overflow-x: scroll;
+}
+
+#barchart .axis--x path {
+    display: none;
+}
+
+/* PIE CHART */
+#chart-area{
+    height: device-height;
+    width: device-width;
+    overflow-x: scroll;
+}
+
+#chart-area svg {
+    margin:auto;
+    display:inherit;
+}
+#piechart text {
+    font: 10px sans-serif;
+}
+#piechart form {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
 /* BODY */
 body{
     background-color: white;
@@ -10,7 +57,6 @@ body{
 /* HEADER */
 header{
     background-color:white;
-    background-repeat: no-repeat;
     height: 140px;
     padding: 10px 40px 40px 50px;
     background-position: center;
@@ -42,6 +88,26 @@ header a{
     margin-left: -65px;
 }
 
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    position:relative;
+    left:50%;
+    display: block;
+}
+  
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
 /* SPLITTING */
 .split{
     height: 100%;
@@ -49,7 +115,6 @@ header a{
     top: 0;
     padding-top: 20px;
     padding-left: 100px;
-    position: top;
     margin: auto;
 }
 .rightLetter{
@@ -58,7 +123,7 @@ header a{
     float: top;
     position: top;
     margin: auto;
-    font-size: 25px;
+    font-size: 35px;
     margin-top:-150px;
     margin-left: 350px;
     margin-bottom: 50px;
@@ -67,51 +132,130 @@ header a{
 .right{
     right:0;
     position: relative;
-    margin-left:300px;
+    margin-left: 350px;
 }
 
 .left{
     position: fixed;
 }
 
-#Choropleth{
-    width: 100%; 
-    height: 100%;
-}
-
-/* Choropleth */
-#Choropleth .counties {
-    fill: none;
-}
-#Choropleth .states {
-    fill: none;
-    stroke: #fff;
-    stroke-linejoin: round;
-}
-
-/* BAR CHART */
-#barchart .axis--x path {
-    display: none;
-}
-
-/* PIE CHART */
-#chart-area svg {
-    margin:auto;
-    display:inherit;
-}
-#piechart text {
-    font: 10px sans-serif;
-}
-#piechart form {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-/* FOOTER */
+/* FOOTER */ 
 footer{
     position: relative;
     text-align: center;
-    margin-left: 300px;
     margin-top: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: medium;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: small;
+    }
+
+    .logo{
+        height: 100px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .left{
+        left: -175px;
+        position: left;
+    }
+
+    .btn{
+        font-size: 12px;
+        width: 80px;
+        height: 38px;
+        margin-left: -35px;
+    }
+
+    .right{
+        right: 300px;
+        width: 65%;
+    }
+
+    .rightLetter{
+        text-align: left;
+        float: left;
+        margin-top:-100px;
+        margin-left: 125px;
+        font-size: large;
+    }
+
+    footer img{
+        height: 20px;
+    }
+    
+  } 
+
+  @media only screen and (min-width:600px) and (max-width: 1200px) {
+    header{
+        background-color:white;
+        background-repeat: no-repeat;
+        height: 140px;
+    }
+
+    li h1{
+        display:inline-block;
+        font-size: large;
+    }
+    
+    li a{
+        display:inline-block;
+        width: 4em;
+        font-size: medium;
+    }
+
+    .logo{
+        height: 150px;
+        border-radius: 50%;
+        margin-left: -15px;
+    }
+
+    .btn{
+        font-size: 15px;
+        width: 100px;
+        height: 50px;
+    }
+
+    .left{
+        left: -150px;
+        position: left;
+    }
+
+    div h1{
+        font-size: large;
+    }
+
+    .right{
+        right:155px;
+        position: right;
+        width: 75%;
+        font-size: small;
+    }
+
+    .rightLetter{
+        text-align: left;
+        float: left;
+        margin-top:-100px;
+        margin-left: 260px;
+        font-size: x-large;
+    }
+
+    footer img{
+        height: 20px;
+    }
+  } 

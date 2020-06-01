@@ -1,14 +1,15 @@
 /* BODY */
 body{
-    /*background-color: white;*/
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
     font-size: 12px;
 }
 
 /* HEADER */
 header{
     background-color:white;
-    background-repeat: no-repeat;
     height: 140px;
     padding: 10px 40px 40px 50px;
     background-position: center;
@@ -44,49 +45,71 @@ header a{
 .split{
     height: 100%;
     width: 50%;
-    z-index: 1;
     top: 0;
-    overflow: hidden;
     padding-top: 20px;
     padding-left: 100px;
-    position: relative;
-    margin: 0;
+    margin: auto;
 }
-
-.left{
-    position: fixed;
-}
-
-.right{
-    right:0;
-    position: relative;
-}
-
 .rightLetter{
     right:0;
     text-align: center;
     float: top;
     position: top;
     margin: auto;
-    font-size: 30px;
-    margin-top:-100px;
-    margin-left: 300px;
+    font-size: 35px;
+    margin-top:-150px;
+    margin-left: 350px;
+}
+
+.right{
+    right:0;
+    position: relative;
+    margin-left: 350px;
 }
 
 .rightBody{
     right:0;
     position: top;
-    margin-left: 525px;
+    margin-left: 325px;
 }
 
-/* FOOTER */ 
+.left{
+    position: fixed;
+}
+
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+/* FOOTER */
 footer{
     position: relative;
     text-align: center;
+    margin-left: 300px;
     margin-top: 50px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     header{
         background-color:white;
         background-repeat: no-repeat;
@@ -111,48 +134,39 @@ footer{
     }
 
     .left{
-        left: -185px;
-        position: fixed;
-    }
-
-    /* SPLITTING */
-    .split{
-        height: 100%;
-        width: 60%;
-        z-index: 1;
-        top: 0;
-        overflow-x: scroll;
-        padding-top: 20px;
-        padding-left: 100px;
-        position: relative;
-        margin: 0;
-    }
-
-    .right{
-        left:-420px;
+        left: -175px;
         position: left;
-        width: 100%;
-    }
-
-    .rightLetter{
-        font-size: x-large;
-        text-align: left;
-        float: center;
-        margin-top:-100px;
-        margin-left: 150px;
     }
 
     .rightBody{
-        margin-left: 80px;
+        margin-left: 55px;
+        margin-top: -25px;
+        font-size: xx-small;
+        width: 55%;
+    }
+
+    div h1{
+        font-size: small;
+    }
+
+    div h2{
+        font-size: smaller;
+    }
+
+    .right{
+        right:300px;
+        margin-top:-25px;
+        position: right;
+        width: 75%;
         font-size: xx-small;
     }
 
-    pre {
-        white-space: pre-wrap;       /* Since CSS 2.1 */
-        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-        white-space: -pre-wrap;      /* Opera 4-6 */
-        white-space: -o-pre-wrap;    /* Opera 7 */
-        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    .rightLetter{
+        text-align: left;
+        float: left;
+        margin-top:-100px;
+        margin-left: 125px;
+        font-size: large;
     }
 
     footer img{
@@ -160,7 +174,7 @@ footer{
     }
   } 
 
-  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+  @media only screen and (min-width:600px) and (max-width: 1200px) {
     header{
         background-color:white;
         background-repeat: no-repeat;
@@ -169,68 +183,52 @@ footer{
 
     li h1{
         display:inline-block;
-        font-size: medium;
+        font-size: large;
     }
     
     li a{
         display:inline-block;
         width: 4em;
-        font-size: small;
+        font-size: medium;
     }
 
     .logo{
-        height: 100px;
+        height: 150px;
         border-radius: 50%;
         margin-left: -15px;
     }
 
     .left{
-        left: -185px;
-        position: fixed;
-    }
-
-    /* SPLITTING */
-    .split{
-        height: 100%;
-        width: 60%;
-        z-index: 1;
-        top: 0;
-        overflow-x: scroll;
-        padding-top: 20px;
-        padding-left: 100px;
-        position: relative;
-        margin: 0;
-    }
-
-    .right{
-        left:-420px;
+        left: -150px;
         position: left;
-        width: 100%;
-    }
-
-    .rightLetter{
-        font-size: x-large;
-        text-align: left;
-        float: center;
-        margin-top:-100px;
-        margin-left: 150px;
     }
 
     .rightBody{
-        margin-left: 80px;
-        font-size: xx-small;
+        margin-left: 125px;
+        font-size: x-small;
+        width: 60%;
     }
 
-    pre {
-        white-space: pre-wrap;       /* Since CSS 2.1 */
-        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-        white-space: -pre-wrap;      /* Opera 4-6 */
-        white-space: -o-pre-wrap;    /* Opera 7 */
-        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    div h1{
+        font-size: large;
+    }
+
+    .right{
+        right:225px;
+        position: right;
+        width: 75%;
+        font-size: small;
+    }
+
+    .rightLetter{
+        text-align: left;
+        float: left;
+        margin-top:-100px;
+        margin-left: 270px;
+        font-size: xx-large;
     }
 
     footer img{
         height: 20px;
     }
-  } 
   } 

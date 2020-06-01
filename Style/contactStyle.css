@@ -125,7 +125,7 @@ footer{
     }
 
     .left{
-        left: -155px;
+        left: -175px;
         position: left;
     }
 
@@ -133,6 +133,7 @@ footer{
         font-size: 12px;
         width: 80px;
         height: 38px;
+        margin-left: -35px;
     }
 
     .right{
@@ -144,7 +145,7 @@ footer{
         text-align: left;
         float: left;
         margin-top:-100px;
-        margin-left: 150px;
+        margin-left: 125px;
         font-size: large;
     }
 

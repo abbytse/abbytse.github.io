@@ -125,21 +125,26 @@ footer{
     }
 
     div h1{
-        font-size: medium;
+        font-size: small;
+    }
+
+    div h2{
+        font-size: smaller;
     }
 
     .right{
         right:300px;
+        margin-top:-25px;
         position: right;
         width: 75%;
-        font-size: x-small;
+        font-size: xx-small;
     }
 
     .rightLetter{
         text-align: left;
         float: left;
         margin-top:-100px;
-        margin-left: 150px;
+        margin-left: 125px;
         font-size: large;
     }
 

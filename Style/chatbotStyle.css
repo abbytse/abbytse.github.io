@@ -259,7 +259,7 @@ footer{
     }
 
     .left{
-        left: -155px;
+        left: -175px;
         position: fixed;
     }
 
@@ -274,13 +274,13 @@ footer{
         text-align: left;
         float: center;
         margin-top:-100px;
-        margin-left: 150px;
+        margin-left: 130px;
     }
 
     .rightBody{
-        margin-left: 85px;
+        margin-left: 55px;
         font-size: xx-small;
-        width: 55%;
+        width: 60%;
     }
 
     /* CHATBOT*/

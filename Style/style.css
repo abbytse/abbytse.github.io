@@ -111,24 +111,20 @@ header a{
 .split{
     height: 100%;
     width: 50%;
-    z-index: 1;
     top: 0;
-    overflow: hidden;
     padding-top: 20px;
-    padding-left: 75px;
-    position: relative;
+    padding-left: 100px;
+    margin: auto;
 }
 
 .left{
-    left: 0;
-    position: relative;
-    margin: auto;
+    position: fixed;
 }
 
 .right{
     right:0;
     position: relative;
-    margin: auto;
+    margin-left: 350px;
 }
 
 .rightLetter{
@@ -210,16 +206,19 @@ header a{
     }
 
     .right{
-        right:-30px;
+        right:300px;
+        margin-top: 20px;
         position: right;
-        width: 75%;
+        width: 80%;
+        font-size: small;
     }
 
     .rightLetter{
         text-align: left;
         float: left;
         margin-top:-50px;
-        margin-left: 150px;
+        margin-left: 100px;
+        width: 100%;
     }
 
     .aboutMe h3{
@@ -259,7 +258,7 @@ header a{
     }
 
     .left{
-        left: -175px;
+        left: -150px;
         position: left;
     }
 
@@ -268,9 +267,11 @@ header a{
     }
 
     .right{
-        right:-30px;
+        right:220px;
+        margin-top:50px;
         position: right;
-        width: 75%;
+        width: 68%;
+        font-size: small;
     }
 
     .rightLetter{

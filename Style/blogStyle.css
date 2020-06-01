@@ -117,8 +117,9 @@ footer{
 
     .right{
         right:300px;
+        margin-top:-25px;
         position: right;
-        width: 68%;
+        width: 65%;
         font-size: xx-small;
     }
 
@@ -126,8 +127,8 @@ footer{
         text-align: left;
         float: left;
         margin-top:-100px;
-        margin-left:100px;
-        font-size: 14px;
+        margin-left: 100px;
+        font-size: small;
     }
 
     footer img{
@@ -171,6 +172,7 @@ footer{
     .right{
         right:250px;
         position: right;
+        margin-top:50px;
         width: 68%;
         font-size: small;
     }
