@@ -1,6 +1,6 @@
-# Personal-Website-and-Blog
+## Personal-Website-and-Blog
 
-To-do: 
-- Optimize for mobile devices **IN PROGRESS
+#To-do: 
+- Add last updated to the pages
 - Make the rivescript file converter 
 - Display Google Analytics on Website (Real Time Data)

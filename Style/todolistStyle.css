@@ -85,18 +85,17 @@ header a{
     padding: 6px 15px;
     cursor: pointer;
     font-size: 15px;
-  }
+}
   
-  /* Darker background on mouse-over */
-  .btn:hover {
+/* Darker background on mouse-over */
+.btn:hover {
     background-color: RoyalBlue;
-  }
-
+}
 
 /* FOOTER */
 footer{
     position: relative;
-    text-align: center;
+    color: gray;
     margin-left: 300px;
     margin-top: 50px;
 }

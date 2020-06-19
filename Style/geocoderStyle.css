@@ -101,11 +101,11 @@ pre {
 }
 
 
-/* FOOTER */
+/* FOOTER */ 
 footer{
     position: relative;
     text-align: center;
-    margin-left: 300px;
+    color: gray;
     margin-top: 50px;
 }
 

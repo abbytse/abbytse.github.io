@@ -80,6 +80,7 @@ footer{
     width: 100%;
     text-align: center;
     margin-left: 100px;
+    color: gray;
 }
 
 @media only screen and (max-width: 650px) {
