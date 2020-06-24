@@ -1,6 +1,5 @@
 ## Personal-Website-and-Blog
 
-#To-do: 
-- Add last updated to the pages
+To-do: 
 - Make the rivescript file converter 
 - Display Google Analytics on Website (Real Time Data)
