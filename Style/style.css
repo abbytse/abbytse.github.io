@@ -128,15 +128,15 @@ header a{
 }
 
 .rightLetter{
-    text-align: right;
-    float: center;
-    margin-top:-100px;
-    margin-left: 180px;
+    text-align: center;
+	float: center;
 }
 
 /* Animated Letters */
 .ml9 {
-    position: relative;
+	position: relative;
+	float: center;
+	text-align: center;
     font-weight: 200;
     font-size: 4em;
   }
@@ -157,7 +157,10 @@ header a{
   }
 
   .aboutMe{
-      text-decoration: none;
+	text-decoration: none;
+	position:relative;
+	float:center;
+	text-align: center;
   }
 
   /* FOOTER */ 
@@ -171,9 +174,8 @@ header a{
 .wrapper{
 	position: relative;
 	display: block;
-	padding-top: 30px;
 	padding-bottom: 30px;
-	z-index: 2;
+	z-index: -1;
 }
 .winter-wrapper{
 	position: relative;
