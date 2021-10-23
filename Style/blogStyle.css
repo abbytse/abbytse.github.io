@@ -73,6 +73,13 @@ header a{
     position: fixed;
 }
 
+.books{
+    width: 180px;
+    height: 250px;
+    border-radius: 8px;
+    margin: 1px 1px 1px 1px;
+}
+
 /* FOOTER */
 footer{
     position: absolute;
